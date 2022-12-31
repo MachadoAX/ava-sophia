@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ava Gardner & Sophia Loren</title>
+</head>
+<body>
+    <!-- Header -->
+    
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
+            <a href="index.html" class="flex items-center">
+                
+                <span class="self-center text-xbase font-semibold whitespace-nowrap dark:text-white">Ava Gardner & Sophia Loren</span>
+            </a>
+            <div class="flex items-center">
+                <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">(081) 3071-7523</a>
+                <a href="index.html" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Home</a>
+            </div>
+        </div>
+    </nav>
+    
+    
+    
+<form class="p-4 max-w-sm m-auto justify-center bg-slate-100 rounded-lg mt-8"  >
+    <div class="mb-6">
+      <label for="apartamento" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Apartamento</label>
+      <input type="text" pattern="\d*" minlength="3"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="4" max="2602" id="apartamento"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="N° do Apartamento (ex: 2201)" required>
+    </div>
+    <div class="mb-6">
+      <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Senha</label>
+      <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Senha" required>
+    </div>
+    
+    <button type="submit" onclick="logar();return false" class="text-white text-center justify-center w-28 flex mx-auto bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" >Entrar</button>
+    
+    <a href="cadastro.html" class="flex w-28 h-8 hover:text -blue-800 mx-auto my-2 text-center justify-center underline">Cadastre-se</a>
+    <span id="alerta" class=""></span>
+</form>
+  
+    
+    <!-- Footer -->
+    <footer></footer>
+    <script src="./js/login.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+</body>
+</html>

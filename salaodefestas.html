@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ava & Sophia - Salão de Festas</title>
+</head>
+<body>
+    <!-- Header -->
+    
+
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
+            <a href="index.html" class="flex items-center">
+                
+                <span class="self-center text-xbase font-semibold whitespace-nowrap dark:text-white">Ava Gardner & Sophia Loren</span>
+            </a>
+            <div class="flex items-center">
+                <a href="tel:5541251234" class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">(081) 3071-7523</a>
+                <a href="login.html" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+            </div>
+        </div>
+    </nav>
+    <nav class="bg-gray-50 dark:bg-gray-700">
+        <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
+            <div class="flex items-center">
+                <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
+                    <li>
+                        <a href="main.html" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                    </li>
+                    <li class="flex">
+                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Avisos</a>
+                        <svg class="w-4 h-4 hidden" id="bell" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                    </li>
+                    
+                    <li>
+                        <a href="#" class="text-gray-900 dark:text-white hover:underline">Eventos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Form  -->
+    
+        
+    <button type="submit" class="text-white bg-blue-700 w-36 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 m-auto flex mt-8" data-modal-toggle="defaultModal">Agendar Evento</button>
+ 
+    
+<!-- Modal toggle -->
+
+  
+  <!-- Main modal -->
+  <div id="defaultModal" tabindex="-1" aria-hidden="true" class="fixed top-0 left-0 right-0  z-50 hidden w-full h-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full justify-center items-center flex">
+      <div class="relative w-full h-full max-w-2xl md:h-auto mx-auto justify-center items-center md:left-32 left-8 ">
+          <!-- Modal content -->
+          <div class="relative bg-white w-80 rounded-lg shadow dark:bg-gray-700">
+              <!-- Modal header -->
+              <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                  <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                      Novo Agendamento
+                  </h3>
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="defaultModal">
+                      <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                      <span class="sr-only">Close modal</span>
+                  </button>
+              </div>
+              <!-- Modal body -->
+              <form class="w-80 mx-auto my-4 bg-slate-100 p-4 rounded-lg " >
+                <div class="grid gap-4 mb-6 ">
+                
+                    <div>
+                        <label for="apartamento" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Apartamento</label>
+                        <input type="text" pattern="\d*" minlength="3"  onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="4" max="2602" type="text" id="apartamento" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Apartamento" required>
+                    </div>  
+                        <label for="torre" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Selecione a Torre</label>
+                        <select id="torre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option value="Ava Gardner" selected>Ava Gardner</option>
+                            <option value="Sopia Loren">Sophia Loren</option>
+                        </select>
+                    </div>
+                    <div class="mb-6">
+                        <label for="dataEvent" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Data do Evento</label>
+                        <input type="date" id="dataEvent" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Selecione a Data" required>
+                    </div> 
+                    
+
+  
+                    <!-- Modal footer -->
+                    <div class="flex items-center justify-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-toggle="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Cadastrar</button>
+                    <button data-modal-toggle="defaultModal" type="button" class="text-slate-100 bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-slate-100 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Cancelar</button>
+                    </div>               
+                    
+                </form>
+            </div>
+              
+          </div>
+      </div>
+  </div>
+<!-- Modal End -->  
+   
+    <!-- Tabela -->
+    <div class="flex overflow-x-auto relative w-5/6 justify-center items-center mx-auto ">
+    
+    <table class=" text-sm text-left text-gray-500 dark:text-gray-400  my-4 rounded-lg">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-200 dark:bg-gray-700 dark:text-gray-400 ">
+            <tr>
+                <th scope="col" class="py-3 px-6">
+                    Apartamento
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Nome
+                </th>
+                <th scope="col" class="py-3 px-6">
+                    Data 
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    2201 - Ava
+                </th>
+                <td class="py-4 px-6">
+                    Fulano
+                </td>
+                <td class="py-4 px-6">
+                    22/01/2023
+                </td>
+                
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    1001 - Sophia
+                </th>
+                <td class="py-4 px-6">
+                    João
+                </td>
+                <td class="py-4 px-6">
+                    11/03/2023
+                </td>
+                
+            </tr>
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    102 - Ava
+                </th>
+                <td class="py-4 px-6">
+                    Maria
+                </td>
+                <td class="py-4 px-6">
+                    16/02/2023
+                </td>
+               
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+    
+    <!-- Footer -->
+    <footer></footer>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+</body>
+</html>
